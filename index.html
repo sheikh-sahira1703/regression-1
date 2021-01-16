@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Aayushmaan's Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4231346c72.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="top-container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="">Aayushmaan Jain</a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Introduction to bivariate data">Introduction</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Descriptive statistics related to bivariate data">Descriptive statistics</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Comparing datasets">Comparing datasets</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#comparision">Comparision</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-me">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Introduction to univariate linear regression</h1>
+
+    </div>
+    <div class="middle-container">
+        <div class="skills" id="Introduction to bivariate data">
+            <h2>Introduction to Bivariate data</h2>
+            <div class="skill-row">
+                <p class="web-description">
+                    Bivariate data is a form of data in which one data point is linked to another data point and the order of arrangement matters 
+                    Eg – height and weight 
+                    In this example, the order of insertion of data matters as a particular person of a particular height has a particular weight and since the order of data insertion matters as we cannot assign another person’s weight to a particular person of a particular height 
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+    <div class="skill-row" id = "Descriptive statistics related to bivariate data">
+        <h2> Descriptive statistics related to bivariate data</h2>
+        <p>
+            <h3>Mean:</h3>
+            We can represent the mean of bivariate data as a tuple containing the mean of individual data columns.<br>
+            <img src="https://sn3302files.storage.live.com/y4mFZ-jOP1M4Bkc6hjNCxHTEy0-daSn2bW3c6v1oFOxkZRrXCDt43QQB3Z4oVwDbCWEjd2sPzyFtQDv2UPBCbnl4AsmqeLYOr5tjB5jb_C0EVhwjNIozEqm66CNdPEptWyqE19YTG3f8tabDYXDQyVrI7T26-_14JALywYpVADyRHSt7vueZUJALASafblci0nY?width=557&height=76&cropmode=none" width="557" height="76" /> <br>
+            <h3>Median</h3>
+            <p class="web-description">We cannot represent the median of bivariate data as a tuple containing the median of individual data columns as while finding the median of individual data columns, the order of insertion matters and it is possible that while arranging the individual columns, the bivariate data as whole might get shuffled</p>
+            <table>
+                <th> Before sorting</th>
+                <tr>
+                    <td>Height</td>
+                    <td>Weight</td>
+                </tr>
+                <tr>
+                    <td>180</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <td>150</td>
+                    <td>63</td>
+                </tr>
+                <tr>
+                    <td>185</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>145</td>
+                    <td>75</td>
+                </tr>
+                <tr>
+                    <td>170</td>
+                    <td>55</td>
+                </tr>
+            </table>
+            <table>
+                <th> After sorting</th>
+                <tr>
+                    <td>Height</td>
+                    <td>Weight</td>
+                </tr>
+                <tr>
+                    <td>145</td>
+                    <td>55</td>
+                </tr>
+                <tr>
+                    <td>150</td>
+                    <td>63</td>
+                </tr>
+                <tr>
+                    <td>170</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <td>180</td>
+                    <td>75</td>
+                </tr>
+                <tr>
+                    <td>185</td>
+                    <td>85</td>
+                </tr>
+            </table>
+            <p class="web-description">Here we see that after sorting individual columns to find the median, the height of 180 was assigned to the weight of 70 but after sorting, we see that the height of 180 is assigned to the weight of 75 which is invalid </p>
+            <h3>Standard Deviation</h3>
+            <p class="web-description">We can represent the standard deviation of the bivariate dataset as a tuple of standard deviation of the individual columns. <br>
+            </p>
+            <img src="https://sn3302files.storage.live.com/y4mf2VwMpgzDFUrjFkOWulBVVVIioWm5CdkAAYa1KJ_BDZj7ygyvhx6zQIbZS2Pd3xHUv1JBvma_pctqp4SAZKTs-0HqzGRjUmQzPXDHes1A1FjZTKmaDH4ae17WUhabPskc420TwksTYQ-pUntWH4FWtCUqJuFtCoazlqHw_h68vZNxWOXmSJvbzpEB3k_R59S?width=573&height=98&cropmode=none" width="573" height="98" /><br>
+            <h3>Conclusion</h3>
+            <p class="web-description">Any descriptive statistic which does not require ordering of data points in order to calculate it can be expressed as a tuple containing that descriptive statistic of individual columns. </p>
+    </div>
+    <hr>
+    <div class="skill-row" id = "Comparing datasets">
+        <h2>Comparing two bivariate datasets</h2>
+        <p class="web-description">Any two datasets that have the same mean and standard deviation cannot be said to be equal and hence we introduce a new measure called covariance</p>
+        <p class="web-description"> Here is the python code to compare a given dataset with a particular mean and standard deviation with a random dataset of same mean and standard deviation</p>
+        <script src="https://gist.github.com/aayush1036/bb8dde881bb8178ba453372cc18e56e3.js"></script>
+        <p class="web-description"> Here we see that mean and standard deviation is not enough to compare two datasets, hence we need a new measure for covariance<br>Hence to resolve this, we shift the coordinates of origin to (μ<sub>x</sub>,μ<sub>y</sub>) where μ<sub>x</sub> is the mean of x and μ<sub>y</sub> is the mean of y <br>Here is the python code to shift the origin</p>
+        <script src="https://gist.github.com/aayush1036/29c42339b818d2982d5d4e91f11a17fd.js"></script>
+        <p class="web-description">
+            Now every point can be expressed as (x<sub>i</sub>-μ<sub>x</sub>,y<sub>i</sub>-μ<sub>x</sub>)<br>
+            Now we take the product of x and y coordinates of each data point.<br>
+            If the product is positive (in first or third quadrant with respect to the shifted origin or we can say that the value of y is increasing with an increase in the value of x) <br>
+            If the product is negative (in second or fourth quadrant with respect to the shifted origin or we can say that the value of y is decreasing with an increase in the value of x) <br>
+            This measure obtained is called as covariance 
+        </p>
+        <h3> Correlation</h3>
+        <p class="web-description">
+            It measures the degree of association of y with x <br>
+            It is obtained by dividing the covariance by the standard deviation of x multiplied by the standard deviation of y <br>
+            <img src="https://sn3302files.storage.live.com/y4mETWeg9BAu7Gwj4DzJePL5_EbOz2jvJf8FMVWCU4HLrxbXnSFq7UD3IQvyQR2YHwufE4_ZJPTYKwmskzODiR82G8D8PlfdD-EWhCwRHYqU1fha9vN79p-Ing60ruwMQTtcXHkczNQu8GTtgxd3OX0HuVUH5bgJglt0FA0wWNGKShaucxBRFg4ticFr-vREIp3?width=567&height=143&cropmode=none" width="567" height="143" /><br>
+            We divide by the standard deviation of x multiplied by the standard deviation of y because: 
+            <ol>
+                <li>It cancels off the units which were there in the covariance</li>
+                <li>Standard deviation is always positive that is why it does not affect the sign</li>
+                <li>It brings the quantity in the range of {-1,1} which provides a universal scale to compare how strong or weak the correlation is</li>
+            </ol>
+        </p>
+
+        
+    </div>
+    <div class="skill-row" id = "Regression">
+        <h2>Regression</h2>
+        <p class = "web-description">In regression we fit a line through the data points<br>
+        Let the line be y= α+βx<br>
+        We use the least squared error approach 
+        We square the error because:
+        <ol>
+            <li>It makes all errors positive and eliminates nullification of positive and negative error</li>
+            <li>It diminishes the errors which are less than one and magnifies the errors which are greater than 1</li>
+            <li>The projections of error taken along the x and y axis add up to the square of the error itself for example r sin⁡θ+r cos⁡θ=r<sup>2</sup></li>
+        </ol>
+        <p class="web-description">
+            Error = y-α-βx<br>
+            Squared error = (y-α-βx)<sup>2</sup><br>
+            Sum of squared error = ∑(y-α-βx)<sup>2</sup> <br>
+            Now we need to minimize the error with respect to alpha and beta<br>
+            Error minimized with respect to alpha gives:<br>
+            <img src="https://sn3302files.storage.live.com/y4mvFnV3DzEqehyqhDZquYeYRucheJjgJgtQt_DAIYBRcV4YcujuRwgRw4p3HXUNUt3Ey4SFRTmYugtjVO_aE88VhUqwd34hiLtrwFQXB9-7tYOuX2jfHsP8hi8t3Ra14EQYHUFlVDNhWoO5z4UHiR-iZPy3eJ6nlJLoXn1IJk3JmZ4By-IsJS7qT7MSW95WdJy?width=525&height=184&cropmode=none" width="525" height="184" /><br>
+            Error minimized with respect to beta gives<br> 
+            <img src="https://sn3302files.storage.live.com/y4m7V3X4NvCfEf5RTASZfKkWykfZFEKgfTzGqPDcV5oMMh1BcQYUvrwSZXoWj0SUOKjYLCR99A12Y5-pp1j7Syps5sXO9Nsw6sqXO_yuQl5C_ccey9eJf72YXFsMUSmKZ6iHtqIGovEr4TN79faCA2TWO02a4O4ZrvX-NfQbPlmHytlQjMKk3yt4Ma_fZP_73nq?width=572&height=186&cropmode=none" width="572" height="186" /><br>
+            We can solve these equations to get the value of alpha and beta or else we can solve them by eliminating one variable<br>
+            <img src="https://sn3302files.storage.live.com/y4m5SQ0jebXFrtcS1I9x9GnwMrgSaPcvAlnmCz_Vo4rSCm5I3fvle7O-XKa1OMw-M1zAMy_nDjdbTTC3iqGWNpOWp0wpOIzDX5k1VOSlMVA0hMs7bHX0ajuCUyyjyopCIGVui6sQZNX9Qs-Ik2Yr5t7zRHvCwtJK6gc1bNwjvpzIvN2QwLuNnIbfVpVRtLd5geH?width=496&height=167&cropmode=none" width="496" height="167" /><br>
+            Now on subtracting 2 from 1 gives<br>
+            <img src="https://sn3302files.storage.live.com/y4mnf6HXd2ZJeVTloivKQ-OHB2jxfAoNDA39107Gk-ge5GnrKhIEOD0afUfeEP_9dRrCKj7mdAue-PsK9YzaURZAkwK4pfkPesxso5FvY1W7F1WHUhtdJQ1pwCdYcH3vipK3_x8HA6-CinJJ14qie5Lo7EMywIyPPrZ85aTIQ3zTkQa1lYcX83sJS_1csqLLALJ?width=672&height=96&cropmode=none" width="672" height="96" /><br>
+            Now on dividing both sides by n<sup>2</sup> we get<br>
+            <img src="https://sn3302files.storage.live.com/y4mkbrWYNpETf6DDKExmYBEFb_o-ZCZpVczujpQpHnEpnTFjjFrWEwCy3j7E7l3AUr5WvWrMrGSrV3TgM4nb0NX1y7czZnHHjwqlkdQSkxqUlJcdxphxXbdjGhjVuPRhNe4sFinHq71pVzOZLmiFl0qO4cDOU4ZpUUZeke1E1vk2Wtr2VcUyQr60FDwktdVxESe?width=601&height=126&cropmode=none" width="601" height="126" /><br>
+            Which can be simplified as <br>
+            <img src="https://sn3302files.storage.live.com/y4mGS2LEp53j7cqpW5iBIrZV2dmV_4vw6HaH6Rznli3rs19sH_wlXI8NcF5KLkV48BVd8KbAn6IgD08Vp7VSMwtd_yydO3BgddhJ6GFw_-H0KZo0vdafHljc8lCLwE2YRLqBQM4TA1fGk3Xm8dJ3w4Ky8KAAACx1UGjKC3hbrECQU-7n-iw_72ynfTay4y4qTqN?width=534&height=59&cropmode=none" width="534" height="59" /><br>
+            Hence: <br>
+            <img src="https://sn3302files.storage.live.com/y4mAsojDbnxbGxyiNAk566mHn83SVCJw4Dp9cP8lM7r4cnXbfRMT7EKTVG_dlsJGTjohQ1aCJnUWG5CqoEz3zWWZxqaTLSrFZ7Bz3imOnrAdXr4q4iyYVAnOXJv2rkKnEnNKRwCeg7JBQApR45i3wcsruXhN5gfFOGABp4z61tF2OZ8DFtQpDMLr0xAAC2Nzcw3?width=347&height=122&cropmode=none" width="347" height="122" /><br>
+            <img src="https://sn3302files.storage.live.com/y4mo5EsnyNdadxAbU_EdNXNLTJIy1mJ4D7TTota7hZ-ohK2XQOVUciLx5wZcj2Hk38gWX94-t7f1ImdazuX29BQmdN45MacHiT0yqvUnX_TB0VQ2Zc-syIxiE0yf_ANuJ8NjTyR1lmy9ypEqo2-vbNJMXZzjngMY_cWm8ieehUe2C-SvSWCepW7tQtj97k1Pfdj?width=446&height=249&cropmode=none" width="446" height="249" /><br>
+            For finding alpha<br>
+            <img src="https://sn3302files.storage.live.com/y4mGRSvjKJLiMqVspxJcTK4L7zurW54OMpcXvujSXycj8FeaDuI_vs9xWt-uBeN_UL7zgTpnDzlsdOKIfaRG5Tx4WLi9LUbxhwfsLih3OLQALzpAWN1MQrhUDBGx7F2uwP6fV3QPlSw0QVS5D9D_jKlC3-9Bet4OH8xsAFBq8tHifKBKg4sS7PyNDt99uRmkoX4?width=490&height=377&cropmode=none" width="490" height="377" />
+        </p>
+    </div>
+    <div class="skill-row" id = "comparision">
+        <h3> Defining our own regression function </h3>
+        <p class="web-description"> Here is the code to create our own regression function</p>
+        <script src="https://gist.github.com/aayush1036/f0683cc2c749e41344fcd73f02b3ba9d.js"></script>
+        <h3> Regression using scikitlearn</h3>
+        <script src="https://gist.github.com/aayush1036/593059ebe2e96ad68ebe769220971123.js"></script>
+        <h3> Using StatsModels</h3>
+        <script src="https://gist.github.com/aayush1036/1f3195203647f20e5f46e0fdbc0f3133.js"></script>
+        <h3>Comparing all three</h3>
+        <script src="https://gist.github.com/aayush1036/40dbc831ab436553e8dc8a33f4d9dca2.js"></script>
+    </div>
+    </div>
+    </div>
+
+    <hr>
+    <div class="contact-me" id="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>Contact Me</h3>
+        <p class="contact">You can contact me via the button given below. Feel free to contact me. Suggestions and corrections are welcomed warmly by me.</p>
+        <a class="btn btn-dark" href="mailto:aayushmaan1306@gmail.com">CONTACT ME</a>
+    </div>
+    <div class="bottom-container">
+        <div class="social-media">
+            <a class="footer-link" href="https://instagram.com/aayush_13_06?igshid=1uavueb7n7khn"><i class="fab fa-instagram"></i>
+                My Instagram profile
+            </a>
+            <a class="footer-link" href="https://github.com/aayush1036"><i class="fab fa-github"></i>
+                GitHub Profile
+            </a>
+            <br>
+            <i class="fas fa-map-pin copyright"></i>
+            <p class="copyright">Mumbai, MH</p>
+        </div>
+
+
+
+        <p class="copyright">© Aayushmaan Jain.</p>
+    </div>
+</body>
+
+</html>
